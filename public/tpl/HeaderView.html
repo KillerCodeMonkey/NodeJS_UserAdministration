@@ -1,0 +1,25 @@
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li class="login-menu">
+          <% if(!isLoggedIn) { %>
+            <a href="/#login">Login</a>
+          <% } else { %>
+            <a href="/#logout">Logout</a>
+          <% } %>
+          </li>
+          
+          <% if(!isLoggedIn) { %>
+          <li class="register-menu">
+            <a href="/#register">Register</a>
+          </li>
+          <% }  else { %>
+          <li class="userlist-menu">
+            <a href="/#users">UserList</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+</div>

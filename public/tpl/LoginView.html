@@ -1,0 +1,32 @@
+<% if(isWarn == 1 && msg != '') { %>
+<div class="alert alert-error">
+	<%=msg%>
+</div>
+<% } else if(isWarn == 0 && msg != '') { %>
+<div class="alert">
+	<%=msg%>
+</div>
+<% } else if(isWarn == 2 && msg != '') { %>
+<div class="alert alert-success">
+	<%=msg%>
+</div>
+<% } %>
+<form id="loginForm" class="form-horizontal">
+	<div class="control-group">
+		<label for="login" class="control-label">Login:</label>
+		<div class="controls">
+			<input id="login" name="login" type="text" value="busen">
+		</div>
+  	</div>
+  	<div class="control-group">
+		<label for="password" class="control-label">Password:</label>
+		<div class="controls">
+			<input id="password" name="password" type="password" value="wuasd">
+		</div>
+    </div>
+    <div class="control-group">
+    	<div class="controls">
+			<button id="submitLogin" name="submit" type="button" class="btn">Login</button>
+		</div>
+	</div>
+</form>
